@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>CodePlayer</title>
+
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        
+    </head>
+
+    <body>
+        
+
+
+        <div id="header">
+            
+            <div id="logo">CodePlayer</div>
+
+            <div id="buttonContainer">
+            
+                <div class="toggleButton active" id="html">HTML</div>
+                <div class="toggleButton" id="css">CSS</div>
+                <div class="toggleButton" id="javascript">JavaScript</div>
+                <div class="toggleButton active" id="output">Output</div>
+            </div>   
+        
+        </div>
+
+        <div id="bodyContainer">
+
+            <textarea id="htmlPanel" class="panel"><p id="paragrafo">Hello World!</p></textarea>
+            <textarea id="cssPanel" class="panel hidden">p { color: red; }</textarea>
+            <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragrafo").innerHTML = "Text Changed by JavaScript";</textarea>
+            <iframe id="outputPanel" class="panel"></iframe>
+
+
+
+        </div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+
+
+
+
+    </body>
+
+
+
+
+</html>
